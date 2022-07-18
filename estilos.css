@@ -43,14 +43,20 @@
     margin: 15px;
 }
 
+.galeria {
+    width: 100%;
+    min-height: 88vh;
+    padding: 20px;
+}
+
 .item {
     height: 200px;
     border: 2px solid #000;
-    margin: 15px;
+    margin: 20px;
     box-shadow: 2px 2px 5px #333;
 }
 .item:hover {
-    border: 8px;
+    border-radius: 7px;
     transform: scale(1.05);
     transition: all 0.6s;
 }
@@ -89,4 +95,58 @@
     background-image: url(./images/DSC_0173.JPG);
     background-size: cover;
     background-position: center;
+}
+
+.footer {
+    background-color: #000;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.titulos{
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.redes {
+    text-align: center;
+}
+.redes a {
+    list-style: none;
+    padding: 5px;
+}
+.redes a i {
+    color: aliceblue;
+}
+.redes i:hover {
+    transform: scale(1.75);
+    transition: all 0.4s;
+}
+
+
+@media only screen and (min-width: 525px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 766px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .titulos {
+        font-size: 12px;
+    }
+    .redes {
+        font-size: 12px;
+        padding: 2px;
+    }
 }
