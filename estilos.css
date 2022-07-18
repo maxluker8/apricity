@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #000;
+    height: 10%;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.inicio li {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.item {
+    height: 200px;
+    border: 2px solid #000;
+    margin: 15px;
+    box-shadow: 2px 2px 5px #333;
+}
+.item:hover {
+    border: 8px;
+    transform: scale(1.05);
+    transition: all 0.6s;
+}
+
+.item1 {
+    background-image: url(./images/DSC_0075.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 {
+    background-image: url(./images/DSC_0144.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url(./images/DSC_0160.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url(./images/DSC_0167.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5 {
+    background-image: url(./images/DSC_0010.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6 {
+    background-image: url(./images/DSC_0173.JPG);
+    background-size: cover;
+    background-position: center;
+}
